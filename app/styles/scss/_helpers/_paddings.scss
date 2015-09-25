@@ -1,0 +1,34 @@
+// Padding helper classes, using the Emmet naming convention
+
+
+@each $space in $spacings {
+    .p-#{$space} {
+        padding: #{$space}px;
+    }
+
+    .pt-#{$space} {
+        padding-top: #{$space}px;
+    }
+
+    .pb-#{$space} {
+        padding-bottom: #{$space}px;
+    }
+
+    .ptb-#{$space} {
+        padding-top: #{$space}px;
+        padding-bottom: #{$space}px;
+    }
+
+    .pl-#{$space} {
+        padding-left: #{$space}px;
+    }
+
+    .pr-#{$space} {
+        padding-right: #{$space}px;
+    }
+
+    .plr-#{$space} {
+        padding-left: #{$space}px;
+        padding-right: #{$space}px;
+    }
+}

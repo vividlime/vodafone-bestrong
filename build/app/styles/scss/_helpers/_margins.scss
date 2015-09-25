@@ -1,0 +1,47 @@
+// Margin helper classes, using the Emmet naming convention
+
+
+@each $space in $spacings {
+    .m-#{$space} {
+        margin: #{$space}px;
+    }
+
+    .mt-#{$space} {
+        margin-top: #{$space}px;
+    }
+
+    .mb-#{$space} {
+        margin-bottom: #{$space}px;
+    }
+
+    .mtb-#{$space} {
+        margin-top: #{$space}px;
+        margin-bottom: #{$space}px;
+    }
+
+    .ml-#{$space} {
+        margin-left: #{$space}px;
+    }
+
+    .mr-#{$space} {
+        margin-right: #{$space}px;
+    }
+
+    .mlr-#{$space} {
+        margin-left: #{$space}px;
+        margin-right: #{$space}px;
+    }
+}
+
+
+// Center horizontally
+.m-center { margin: 0 auto; }
+
+
+// Extra margins
+// -----------------
+.mb-0{ margin-bottom: 0px  }
+.mb-2 { margin-bottom: 2em; }
+.mb-8 { margin-bottom: 8px; }
+.mb-9 { margin-bottom: 9px; }
+.mb-18 { margin-bottom: 18px }

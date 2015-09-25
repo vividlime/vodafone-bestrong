@@ -1,0 +1,102 @@
+/* Isotope Grids.
+
+Allows you to specify an isotope grid layout and how many
+items per row you need (2, 3, or 4).
+
+E.g. :
+
+<ul class="isotope-grid grid-3-up">
+    <li class="grid-sizer"></li>
+    <li class="gutter-sizer"></li>
+
+    <li class="isotope-item">
+        ...
+    </li>
+    <li class="isotope-item">
+        ...
+    </li>
+
+    ...
+</ul>
+
+*/
+
+
+.isotope-grid {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @include clearfix();
+
+    // Max 2 items on row
+    &.grid-2-up {
+        .gutter-sizer {
+            width: 2%;
+        }
+
+        .isotope-item,
+        .grid-sizer {
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $extra-large) {
+                width: 49%;
+            }
+
+            @media screen and (max-width: $medium) {
+                width: 100%;
+            }
+        }
+    }
+
+
+
+    // Max 3 items on row
+    &.grid-3-up {
+        .gutter-sizer {
+            width: 2%;
+        }
+
+        .isotope-item,
+        .grid-sizer {
+            margin-bottom: 30px;
+
+            @media screen and (max-width: $extra-large) {
+                width: 32%;
+            }
+
+            @media screen and (max-width: $large) {
+                width: 48%;
+            }
+
+            @media screen and (max-width: $medium) {
+                width: 100%;
+            }
+        }
+    }
+
+    // Max 4 items on row
+    &.grid-4-up {
+        .gutter-sizer {
+            width: 1%;
+        }
+
+        .isotope-item,
+        .grid-sizer {
+            margin-bottom: 10px;
+
+            @media screen and (max-width: $extra-large) {
+                width: 24%;
+            }
+
+            @media screen and (max-width: $large) {
+                width: 48%;
+            }
+
+            @media screen and (max-width: $medium) {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
