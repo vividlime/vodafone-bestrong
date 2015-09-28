@@ -1,8 +1,22 @@
 h1, h2, h3, h4, h5, h6, p{
 	color: $vodafone-red;
+	font-family: "vodafone_rg", helvetica, sans-serif;
+	@media screen and (max-width: $small-med) {
+		font-size: 36px;
+	}
+}
+
+h1 {
+	font-family: "vodafone_exb", helvetica, sans-serif;
+}
+
+p {
+	font-size: 18px;
+	@media screen and (max-width: $small-med){
+		font-size: 14px;
+	}
 }
 
 .heading {
-	font-weight: bold;
 	font-size: 48px;
 }

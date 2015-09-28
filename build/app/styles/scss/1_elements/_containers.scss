@@ -1,3 +1,56 @@
 .container-fluid{
 	width: 50%;
+	@media screen and (max-width: $small){
+		width: 100%;
+	}
+}
+
+.wrapper {
+  width: 970px;
+  background: url(C:/wamp/www/vodafone-bestrong/assets/images/page-bg.png);
+  background-repeat: no-repeat;
+  // background-size: cover;
+  height: 100%;
+  & .container{
+  	width: 100%;
+  }
+  @media screen and (max-width: $large){
+  	width: 100%;
+  }
+  @media screen and (max-width: $small-med) {
+  	background-position: -80px 0px;
+  }
+  // @media screen and (max-width: $small-med){
+  // 	height: auto;
+  // }
+}
+
+.container{
+	& .header {
+		margin-bottom: 50px;
+		margin-top: 20px;
+		@media screen and (max-width: $small-med){
+			margin-bottom: 30px;
+		}
+	}
+	& .row {
+		& .col-sm-12 {
+			& h1, p{
+				margin-left: 140px;
+				@media screen and (max-width: $large){
+					margin-left: 150px;
+				}
+				@media screen and (max-width: $medium) {
+					margin-left: 150px;
+				}
+				@media screen and (max-width: $small-med){
+					margin-left: 50px;
+				}
+
+				@media screen and (min-width: $small) and (max-width: 567px){
+					margin-left: 50px;
+				}
+			}
+		}
+	}
 }
