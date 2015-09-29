@@ -26,6 +26,14 @@
 		font-size: 18px;
 		height: 54px;
 		color: #000;
+		&:invalid:focus{
+			border: 1px solid red;
+			outline: none;
+			box-shadow: none;
+		}
+		&:valid:focus{
+			box-shadow: none;
+		}
 	}
 }
 
