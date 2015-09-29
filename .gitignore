@@ -3,3 +3,4 @@ config.ini
 *.sass-cache/
 node_modules/*
 app/bower_components/*
+*.css
