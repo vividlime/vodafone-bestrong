@@ -13,7 +13,7 @@
 .box-text {
 	color: #000000;
 	font-weight: bold;
-	padding: 15px 10px;
+	padding: 15px 0px;
 	margin: 0;
 	font-size: 18px;
 	text-align: center;
@@ -35,7 +35,9 @@
 			box-shadow: none;
 		}
 	}
+
 }
+
 
 .btn-primary {
 		margin: 0 auto;
@@ -55,4 +57,15 @@
 		& i{
 			padding: 5px;
 		}
+		
+	}
+.form-icon {
+		font-family: "icomoon";
+		content: "\e6c5";
+		color: #ffffff;	
+		position: absolute;
+		bottom: 25px;
+		left: 20%;
+		font-size: 25px;
+		margin: 5px;
 	}
